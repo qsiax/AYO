@@ -1,0 +1,100 @@
+.home {
+    min-height: 100vh;
+    position: relative;
+    background: url('../source/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    &__container {
+        overflow: visible;
+    }
+
+    &__body {
+        min-height: 100vh !important;
+    }
+
+    &__wrapper {
+        position: absolute;
+        left: 12%;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    &__heading {
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        max-width: 500px;
+        color: $primary-color-02;
+    }
+
+    &__text {
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+        text-transform: uppercase;
+        max-width: 380px;
+        color: $primary-color-02;
+    }
+
+    &__img {
+        position: absolute;
+        top: 60%;
+        left: 22%;
+        width: 320.322px;
+        height: 380.881px;
+        background: url('../source/christmas.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    &__arrow-prev {
+        position: absolute;
+        left: 5%;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 25.587px;
+        height: 40.582px;
+        background: url('../source/arrow-prev-white.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        cursor: pointer;
+        transition: .3s ease;
+        z-index: 1;
+        &.swiper-button-disabled {
+            opacity: .5;
+        }
+    }
+
+    &__arrow-next {
+        position: absolute;
+        right: 5%;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 25.587px;
+        height: 40.582px;
+        background: url('../source/arrow-next-white.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        cursor: pointer;
+        transition: .3s ease;
+        z-index: 1;
+        &.swiper-button-disabled {
+            opacity: .5;
+        }
+    }
+}
+
+.home-summer {
+    min-height: 100vh;
+    position: relative;
+    background: url('../source/summer.jpg') center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    * {
+        color: $main-color;
+    }
+}

@@ -1,0 +1,123 @@
+.header-second {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background: $main-color;
+    z-index: 11;
+    transform: translateY(-100%);
+    transition: .5s ease;
+    &.active {
+        transform: translateY(0%);
+    }
+    &__container {
+    }
+
+    &__body {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+    }
+
+    &__logo {
+        font-size: 48px;
+        font-weight: 300;
+        line-height: normal;
+        padding: 5px 14px 9px 15px;
+        background: $primary-color;
+        color: $main-color;
+        margin-right: 103px;
+        cursor: pointer;
+    }
+
+    &__menu-wrapper {
+        display: flex;
+        align-items: center;
+    }
+
+    &__menu-icon {
+        font-size: 15px;
+        margin-right: 8px;
+        cursor: pointer;
+    }
+
+    &__menu {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 127.385%;
+        letter-spacing: 0.14px;
+        text-transform: uppercase;
+        cursor: pointer;
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            width: 0%;
+            height: 1px;
+            right: 0;
+            bottom: -1px;
+            background: $text-color;
+            transition: .3s ease;
+        }
+        &:hover::before {
+            width: 100%;
+            right: auto;
+            left: 0;
+        }
+    }
+
+    &__navigation {
+        display: flex;
+        li {
+            margin-right: 26px;
+            &:last-child {
+                margin-right: 0;
+            }
+            a {
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 0%;
+                letter-spacing: 0.14px;
+                text-transform: uppercase;
+                position: relative;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 0%;
+                    height: 1px;
+                    right: 0;
+                    bottom: -1px;
+                    background: $text-color;
+                    transition: .3s ease;
+                }
+                &:hover::before {
+                    width: 100%;
+                    right: auto;
+                    left: 0;
+                }
+            }
+        }
+    }
+
+    &__icons {
+        display: flex;
+    }
+
+    &__icon {
+        font-size: 20px;
+        cursor: pointer;
+        margin-right: 23px;
+        transition: .3s ease;
+        &:last-child {
+            margin-right: 0;
+        }
+        &:hover {
+            transform: translateY(-6px);
+        }
+    }
+}
